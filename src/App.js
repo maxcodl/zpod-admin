@@ -1,11 +1,16 @@
 import './App.css';
-import Home from './Home';
-import RegenerateStat from './pages/Regenerate_stat';
+import Home from './pages/Home';
 import VariantHistory from './pages/variant_history';
 import ComparePrompts from './pages/Compare_prompts';
 import DataAnalytics from './pages/Data_analytics_and_reports';
 import UserManagement from './pages/User_management';
+import RegenerateStat from './pages/Regenerate_stat';
 import { Route, Routes } from 'react-router-dom';
+
+import "./css/style4.css"
+
+
+
 
 function App() {
   return (

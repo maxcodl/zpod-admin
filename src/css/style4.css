@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.heading {
+  margin-top: -60px;
+  padding: 20px;
+  margin: 10px;
+  font-size: 45px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.sub-dropdown-container {
+  margin-left: 30px;
+  width: 50%;
+}
+.dropdown {
+  display: flex;
+  margin: 70px;
+}
+.input-box {
+  width: 500px;
+  height: 50px;
+  margin-left: 20px;
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 5px;
+}
+.sub-dropdown-container {
+  margin-left: 50px;
+}
+.input-box2 {
+  width: 500px;
+  height: 50px;
+  margin-left: 30px;
+  margin-right: 40px;
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 5px;
+}
+.label {
+  margin-top: 25px;
+  margin-right: 100px;
+  font-size: 20px;
+}
+
+.input-box3 {
+  width: 500px;
+  height: 50px;
+  margin-left: -5px;
+  margin-right: 25px;
+  margin-top: 60px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.date {
+  height: 50px;
+  margin-left: 70px;
+  margin-bottom: 70px;
+  margin-right: 70px;
+}
+.download-button {
+  position: absolute;
+  float: left;
+  margin: 20px 35px 20px -20px;
+  cursor: pointer;
+  background-color: #ffffff;
+  border: none;
+  color: rgb(0, 0, 0);
+  width: 200px;
+  border: 3px #000000;
+  text-align: center;
+  text-decoration: none;
+  font-size: 12px;
+  cursor: pointer;
+  border-radius: 5px;
+  bottom: 300px;
+  right: 20px;
+  transition: background-color 0.3s ease-in-out;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  padding: 20px;
+  margin-bottom: -220px;
+}
+
+.download-button:hover {
+  background-color: #dcdcdc;
+}
+
+.download-button:active {
+  background-color: #6d6d6d;
+}

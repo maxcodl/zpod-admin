@@ -1,4 +1,6 @@
 import React from "react";
+import { showSubDropdown } from './script';
+import "../css/style2.module.css"
 
 function RegenerateStat() {
     return (
@@ -9,7 +11,7 @@ function RegenerateStat() {
             </div>
             {/* Sidebar */}
             <div className="w3-sidebar w3-bar-block w3-border-right" style={{ display: 'none' }} id="mySidebar">
-                <button onClick="w3_close()" className="w3-bar-item w3-large">Close ×</button>
+                <button onClick={() => { document.getElementById("mySidebar").style.display = "none" }} className="w3-bar-item w3-large">Close ×</button>
                 <a className="w3-bar-item w3-button">History 1</a>
                 <a className="w3-bar-item w3-button">History 2</a>
                 <a className="w3-bar-item w3-button">History 3</a>
@@ -60,6 +62,7 @@ function RegenerateStat() {
                         <div id="word-count2">Word count : </div>
                         <div className="emoji-count" id="emoji-count2">Emoji count : </div>
                     </div>
+
                     <div className="button-container">
                         <button id="save-button" className="save-button">SAVE</button>
                         <br />

@@ -1,19 +1,23 @@
 import React from "react";
+import { showSubDropdown } from "./script";
+import "../css/style2.module.css"
 
 function DataAnalytics() {
-    return (
+    const showSubDropdown = () => {
+        const subDropdown = document.getElementById("sub-dropdown-container");
+        subDropdown.style.display = "block";
+    };
 
+    return (
         <div>
-            <meta charSet="UTF-8" />
-            <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
-            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
             <title>Data analytics and reports</title>
-            <link rel="stylesheet" href="style4.css" />
             <div className="heading">Data analytics and reports</div>
-            <div className="container">
+            <div className="container1">
                 <div className="dropdown">
-                    <label className="label" htmlFor="reports">Reports :</label>
-                    <select id="reports" className="input-box" onChange="showSubDropdown()">
+                    <label className="label" htmlFor="reports">
+                        Reports :
+                    </label>
+                    <select id="reports" className="input-box" onChange={showSubDropdown}>
                         <option value="reading">Select a report</option>
                         <option value="reading">READING</option>
                         <option value="notifications">Notifications</option>
@@ -35,20 +39,28 @@ function DataAnalytics() {
                     <br />
                 </div>
                 <div className="date">
-                    <label className="label" htmlFor="period">Period :</label>
-                    <input type="text" onFocus="(this.type='date')" onBlur="(this.type='text')" id="from-date" name="from-date" className="input-box2" placeholder="From" /><input type="text" onFocus="(this.type='date')" onBlur="(this.type='text')" id="to-date" name="to-date" className="input-box2" placeholder="To" />
+                    <label className="label" htmlFor="period">
+                        Period :
+                    </label>
+                    <input type="text" onFocus={(e) => (e.target.type = "date")} onBlur={(e) => (e.target.type = "text")} id="from-date" name="from-date" className="input-box2" placeholder="From" />
+                    <input type="text" onFocus={(e) => (e.target.type = "date")} onBlur={(e) => (e.target.type = "text")} id="to-date" name="to-date" className="input-box2" placeholder="To" />
                     <br />
                     <br />
-                    <label className="label" htmlFor="file-format">File format : </label>
+                    <label className="label" htmlFor="file-format">
+                        File format :{" "}
+                    </label>
                     <select id="file-format" className="input-box3">
                         <option value="excel">Excel</option>
                         <option value="pdf">PDF</option>
                     </select>
                     <br />
-                    <button className="download-button" id="download-button">Download</button>
+                    <button className="download-button" id="download-button">
+                        Download
+                    </button>
                 </div>
-            </div></div>
-    )
+            </div>
+        </div>
+    );
 }
 
 export default DataAnalytics;
